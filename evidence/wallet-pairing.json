@@ -1,0 +1,8 @@
+{
+  "browser_wallet": "Wallet Standard test fixture",
+  "rejected_connection_recovered": true,
+  "reload_preserved_pairing": true,
+  "account_change_required_new_selection": true,
+  "wallet_signature_requested": false,
+  "live_game_frame": false
+}

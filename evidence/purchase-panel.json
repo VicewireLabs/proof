@@ -1,0 +1,13 @@
+{
+  "verified_simulator_states": [
+    "fresh devnet quote",
+    "credited fixture",
+    "failed fixture",
+    "pending fixture",
+    "manual review fixture",
+    "expired fixture",
+    "cross-wallet rejection"
+  ],
+  "live_game_verified": false,
+  "user_wallet_signed": false
+}

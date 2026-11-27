@@ -1,0 +1,19 @@
+{
+  "platform": "Windows PC, emulated console build",
+  "capture": "Game-only presented frame readback, silent; target sampling rate 5 Hz",
+  "capture_start_utc": "2026-11-27T20:22:15.226216+00:00",
+  "capture_last_frame_utc": "2026-11-27T20:22:26.927723+00:00",
+  "captured_frames": 60,
+  "capture_duration_between_samples_seconds": 11.702,
+  "renderer_window_start_utc": "2026-11-27T20:20:32.553181Z",
+  "renderer_window_end_utc": "2026-11-27T20:22:22.070662Z",
+  "renderer_sample_count": 22,
+  "minimum_sample_fps": 2.6,
+  "median_sample_fps": 21.0,
+  "maximum_sample_fps": 30.2,
+  "samples_30_fps_or_above": 7,
+  "samples_ending_during_scene_capture_fps": [
+    19.6,
+    18.8
+  ]
+}

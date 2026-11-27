@@ -1,0 +1,16 @@
+{
+  "network": "isolated local validator",
+  "slot": 34,
+  "signature": "5ejrak3UeJ4iQ5o638fQ5GTJKod2DzkwhZcxr6k6mqChKANXCSURmakt9FjJZnEE2G1m24a6gCRcj99Dd1gu3Le5",
+  "merchant_lamports": "100000000",
+  "service_fee_lamports": "2000000",
+  "network_fee_lamports": "5000",
+  "concurrent_verifiers": [
+    "credited",
+    "already credited",
+    "already credited",
+    "already credited"
+  ],
+  "after_restart": "already credited",
+  "game_entitlement": "companion ledger only"
+}

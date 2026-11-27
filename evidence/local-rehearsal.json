@@ -1,0 +1,19 @@
+{
+  "network": "local",
+  "genesis": "3uJhPuX8diYePgMKYc1Jkr6igNEVfPBmMzD5D3GhMwgJ",
+  "completion_source": "simulated delivery",
+  "funding_source": "test faucet",
+  "concurrent_completions": 4,
+  "wire_transactions": 1,
+  "recipient_history_count": 1,
+  "distinct_candidate_blockhashes": 4,
+  "restart_reconciled": true,
+  "reload_reconciled": true,
+  "recipient": "8qSdSm5Kc8EpQbSeFApy3gWNah3RWGkXRGY9s5B56YEF",
+  "treasury": "Bx679GBo1bGzYn2tiQJKPNjt9aE8E8M3z1rQRnkKoGTM",
+  "signature": "3fKuAPDrgduFPsvY3zsn37oSkx6a5RGP1ntsvj7CnMsu6L1VHQ93zLhCQ5z2BbGdT8KoUTK1G9HUDcCzJRyLTnz3",
+  "finalized_slot": 38,
+  "player_lamports": 2000000,
+  "treasury_lamports": -2005000,
+  "network_fee_lamports": 5000
+}

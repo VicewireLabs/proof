@@ -1,0 +1,13 @@
+{
+  "network": "devnet",
+  "genesis": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+  "slot": 526938177,
+  "price_lamports": "100000000",
+  "fee_lamports": "2000000",
+  "network_fee_lamports": "5000",
+  "units_consumed": 300,
+  "result": "successful unsigned simulation",
+  "sent": false,
+  "signatures_requested": 0,
+  "account_source": "public devnet validator identities"
+}

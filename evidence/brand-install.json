@@ -1,0 +1,20 @@
+{
+  "app": "Vicewire",
+  "token_ticker": "VICEWIRE",
+  "english_labels": 127,
+  "all_modified_brand_labels": 1278,
+  "tables_independently_decoded": 139,
+  "texture_targets": 31,
+  "formatting_exceptions": [
+    "262a010",
+    "5a138b0",
+    "7a1d8c0",
+    "4f888c0",
+    "84e48d0",
+    "9b778c0"
+  ],
+  "source_asset_sha256": "60871bb6fee579d7c01b9d6362e6d6a40441c46f7203acd87e4c38c7387ea879",
+  "installed_text_sha256": "5273e9307a22c775ad2c65cfbb10e17ec0668ace2a0ddd986053aadb36aa7d8b",
+  "installed_texture_sha256": "3f5639e6156740a99778dace17163414a3c8183ae369a7ec106ce8d1cca20dc6",
+  "live_phone_screen_captured": false
+}
