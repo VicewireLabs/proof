@@ -1,5 +1,7 @@
 # Vicewire proof
 
+[Run the Vicewire companion](https://github.com/VicewireLabs/vicewire) or [pick a contribution](https://github.com/VicewireLabs/vicewire/blob/main/CONTRIBUTING.md). The companion source is available under Apache-2.0.
+
 Vicewire is a private single-player GTA VI prototype with a Solana devnet wallet companion. On November 27, 2026, a simulated delivery paid **0.002 test SOL** to a newly generated player wallet. The treasury used faucet funds. Story Mode missions still award ordinary game cash. A live mission trigger, proof that a player controls their paired wallet, and deposits from $VICEWIRE creator fees are future integrations.
 
 ## Check the payout
