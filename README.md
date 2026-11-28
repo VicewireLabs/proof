@@ -1,5 +1,7 @@
 # Vicewire proof
 
+**$VICEWIRE CA** (Solana): [`viCEWiReoWxwmRRfGmWmpP1FFdB8Jm8PzZChVJ9dvg6`](https://solscan.io/token/viCEWiReoWxwmRRfGmWmpP1FFdB8Jm8PzZChVJ9dvg6)
+
 [Run the Vicewire companion](https://github.com/VicewireLabs/vicewire) or [pick a contribution](https://github.com/VicewireLabs/vicewire/blob/main/CONTRIBUTING.md). The companion source is available under Apache-2.0.
 
 Vicewire is a private single-player GTA VI prototype that runs on real Solana. On November 27, 2026, a wallet held by the game paid **0.006034 SOL** on Solana mainnet to create a coin on Pump.fun from the in-game phone, and then did it a second time. Both transactions are finalized and anyone can check them below. Story Mode missions still award ordinary game cash. A mission that pays SOL, proof that a player controls a paired wallet, and deposits from $VICEWIRE creator fees are future integrations.
