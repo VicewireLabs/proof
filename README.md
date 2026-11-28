@@ -2,9 +2,47 @@
 
 [Run the Vicewire companion](https://github.com/VicewireLabs/vicewire) or [pick a contribution](https://github.com/VicewireLabs/vicewire/blob/main/CONTRIBUTING.md). The companion source is available under Apache-2.0.
 
-Vicewire is a private single-player GTA VI prototype with a Solana devnet wallet companion. On November 27, 2026, a simulated delivery paid **0.002 test SOL** to a newly generated player wallet. The treasury used faucet funds. Story Mode missions still award ordinary game cash. A live mission trigger, proof that a player controls their paired wallet, and deposits from $VICEWIRE creator fees are future integrations.
+Vicewire is a private single-player GTA VI prototype that runs on real Solana. On November 27, 2026, a wallet held by the game paid **0.006034 SOL** on Solana mainnet to create a coin on Pump.fun from the in-game phone, and then did it a second time. Both transactions are finalized and anyone can check them below. Story Mode missions still award ordinary game cash. A mission that pays SOL, proof that a player controls a paired wallet, and deposits from $VICEWIRE creator fees are future integrations.
 
-## Check the payout
+## Real SOL on mainnet
+
+![The in-game phone showing the receipt for a coin created on Pump.fun](media/phone-launch-receipt-in-game.jpg)
+
+[Watch the 24-second launch](media/phone-launch.mp4). Lucia takes out her phone, the Pump.fun app opens with the cost and the wallet's balance, the coin is created and the receipt appears, all inside the running game.
+
+| | First launch | Second launch (filmed above) |
+|---|---|---|
+| Transaction | [58gcp51a…WDhP8y](https://explorer.solana.com/tx/58gcp51aPZpPuXPHGCeiau1BTYht2yvP6fVo6fG8QrscefbLXFSsikqFQ7mmh72RiBMTExZeWLrjELQYYsWDhP8y) | [63bYBhSH…xNrpi](https://explorer.solana.com/tx/63bYBhSHcB7GXxQCdAdj3Esn25HAviS35bEs7veSgWBHii4sKCzCDwNA8GfvRyqFG9EJkt2nY3TbpBwgFSGxNrpi) |
+| Coin created | [B6San66b…X1krf](https://explorer.solana.com/address/B6San66b2qPkfyJiKJakTrWgor977hQjPxbKpvAX1krf) | [B12GArt1…gb68N](https://explorer.solana.com/address/B12GArt1RteF2Cm2eAzCkP9revY65drbozfYM37gb68N) |
+| Finalized slot | 474740541 | 474741563 |
+| Paid by the game wallet | 6,034,320 lamports | 6,034,320 lamports |
+| Network fee inside that | 45,000 lamports | 45,000 lamports |
+| Wallet balance before and after | 0.099595 to 0.093561 SOL | 0.093561 to 0.087526 SOL |
+
+The game wallet is [A2ZZMvo9…Cn27i](https://explorer.solana.com/address/A2ZZMvo9MntHWkYjwwbVGVMBJBkPxXMHNxTnn9SCn27i). It was funded with real SOL, it is the fee payer on both transactions, and its key stays on the player's PC. Each coin is named "test" with the ticker TEST and was created with no first buy. These are test coins made to prove the path. They are not the Vicewire token.
+
+Check both with Python 3.11 or later. The live verifier reads Solana's public mainnet RPC. It confirms the network, signature, slot, fee payer, signers, fee and balance change, and that the only program work in each transaction is one Pump.fun coin creation. It needs no wallet, credentials or third-party packages.
+
+```sh
+python verify_mainnet.py --live
+python verify_mainnet.py
+```
+
+The second command checks the bundled transactions ([first](evidence/mainnet-launch-1.json), [second](evidence/mainnet-launch-2.json)) against the [launch summary](evidence/mainnet-launches.json).
+
+## Custom Solana apps in the game
+
+| App | What it does today | Evidence |
+|---|---|---|
+| Vicewire | The game's own payment app carries the Vicewire name and palm mark on the phone's home screen. The texture and label changes are installed in the game's files. | [Phone home screen](media/phone-home.jpg) · [Install record](evidence/brand-install.json) |
+| Pump.fun launcher | Quotes the cost by simulating the transaction, shows the wallet's balance, creates the coin when confirmed and shows the receipt. A signer that refuses anything except one coin creation for the confirmed coin, under a spending limit of 0.02 SOL, approves each launch. | [Create screen](media/phone-launch-create.png) · [Receipt screen](media/phone-launch-receipt.png) · [In the game](media/phone-launch-create-in-game.jpg) |
+| Wallet companion | Pairs a public address and reads its balance beside the game. | [Companion preview](media/wallet-companion.jpg) · [Pairing results](evidence/wallet-pairing.json) |
+
+How the launch film was made: the phone opens by a real controller press and the home screen is the game's own. The Pump.fun tile, its app and the receipt are drawn onto the phone by the Vicewire plugin, and the script that films the run moves onto the tile and presses its buttons. The coin, the cost, the wallet and the receipt are real. A Pump.fun tile that the game's own phone menu selects is the next step.
+
+## Devnet payout rehearsal
+
+Earlier the same day, a simulated delivery paid **0.002 test SOL** to a newly generated player wallet on Solana devnet. The treasury used faucet funds.
 
 [Open the finalized transaction in Solana Explorer](https://explorer.solana.com/tx/44XwNDhiLtd5k3iNzgRJmwYjYqukPJwNH4a4QHpML38rvFYJMgp2En7JnSh7ta3aNNCXCLqobCvCqcqGxMmra6hL?cluster=devnet). At slot **526954858**, the player gained **2,000,000 lamports** and the treasury spent **2,005,000 lamports**, including the **5,000-lamport network fee**.
 
@@ -54,6 +92,6 @@ The default validator port is 8899. If your validator uses another loopback port
 
 ## Intro film
 
-[Watch the 14-second Vicewire intro](media/vicewire-intro.mp4). This is a promotional animation with original illustrations, titles and music. The PC capture and transaction receipt above are the evidence for gameplay and the test payout.
+[Watch the 14-second Vicewire intro](media/vicewire-intro.mp4). This is a promotional animation with original illustrations, titles and music. The launch film, PC capture and transactions above are the evidence.
 
 [File checksums](SHA256SUMS) cover the published evidence, media and verifier files.

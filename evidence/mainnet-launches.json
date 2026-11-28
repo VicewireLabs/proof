@@ -1,0 +1,42 @@
+{
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "funding_source": "real SOL sent to the game wallet",
+  "game_wallet": "A2ZZMvo9MntHWkYjwwbVGVMBJBkPxXMHNxTnn9SCn27i",
+  "program": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+  "instruction": "CreateV2",
+  "first_buy_lamports": 0,
+  "screen_note": "The phone opens by a real pad press and the home screen is the game's own. The Pump.fun tile, its app and the receipt are drawn over the phone by the Vicewire plugin, and the script that films the run moves onto the tile and presses its buttons.",
+  "launches": [
+    {
+      "signature": "58gcp51aPZpPuXPHGCeiau1BTYht2yvP6fVo6fG8QrscefbLXFSsikqFQ7mmh72RiBMTExZeWLrjELQYYsWDhP8y",
+      "mint": "B6San66b2qPkfyJiKJakTrWgor977hQjPxbKpvAX1krf",
+      "name": "test",
+      "symbol": "TEST",
+      "finalized_slot": 474740541,
+      "block_time": 1795823397,
+      "network_fee_lamports": 45000,
+      "wallet_paid_lamports": 6034320,
+      "wallet_before_lamports": 99595000,
+      "wallet_after_lamports": 93560680,
+      "spend_cap_lamports": 20000000,
+      "metadata_uri": "https://gateway.pinata.cloud/ipfs/bafkreieanq5m4nbxgr3sse3cpbktjptxt5zyuzddumdvzv3gpkqmdertey",
+      "transaction_file": "evidence/mainnet-launch-1.json"
+    },
+    {
+      "signature": "63bYBhSHcB7GXxQCdAdj3Esn25HAviS35bEs7veSgWBHii4sKCzCDwNA8GfvRyqFG9EJkt2nY3TbpBwgFSGxNrpi",
+      "mint": "B12GArt1RteF2Cm2eAzCkP9revY65drbozfYM37gb68N",
+      "name": "test",
+      "symbol": "TEST",
+      "finalized_slot": 474741563,
+      "block_time": 1795823617,
+      "network_fee_lamports": 45000,
+      "wallet_paid_lamports": 6034320,
+      "wallet_before_lamports": 93560680,
+      "wallet_after_lamports": 87526360,
+      "spend_cap_lamports": 20000000,
+      "metadata_uri": "https://gateway.pinata.cloud/ipfs/bafkreigogwysx5owuk43ff3nfb56dsvflvtfyxtzfic2pidmjisjab2lji",
+      "transaction_file": "evidence/mainnet-launch-2.json"
+    }
+  ]
+}
